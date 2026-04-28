@@ -61,16 +61,22 @@ elif introd == "2":
   introdumk = input(Fore.LIGHTWHITE_EX + "» ")
   Daf={}
   Daf["Artigo a vender:"]=introdumk
-  print(Daf)
+  print(Fore.LIGHTYELLOW_EX+"Por quantos € deseja vender?")
+  qua = int(input(Fore.LIGHTWHITE_EX + "» "))
+  Daf["Quantia (€):"]=qua
+  print(Fore.BLUE,Daf)
   time.sleep(1)
-  print(Fore.LIGHTGREEN_EX + "A equipa Vitality comprou:", introdumk)
+  print(Fore.LIGHTGREEN_EX + "A equipa Vitality comprou:", introdumk,Fore.LIGHTGREEN_EX+", por", qua,Fore.LIGHTGREEN_EX+"€")
   print(Fore.LIGHTBLUE_EX + "_______________________")
  elif introdum == "2":
   print(Fore.LIGHTYELLOW_EX + "Que PC deseja vender?")
   introdumkln = input(Fore.LIGHTWHITE_EX + "» ")
   Dados={}
   Dados["Artigo a vender:"]=introdumkln
-  print(Dados)
+  print(Fore.LIGHTYELLOW_EX+"Por quantos € deseja vender?")
+  QUA = int(input(Fore.LIGHTWHITE_EX + "» "))
+  Dados["Quantia (€):"]=QUA
+  print(Fore.BLUE,Dados)
   time.sleep(1)
-  print(Fore.LIGHTGREEN_EX + "A equipa fúria comprou:", introdumkln)
+  print(Fore.LIGHTGREEN_EX + "A equipa fúria comprou:", introdumkln,Fore.LIGHTGREEN_EX+",por",QUA,Fore.LIGHTGREEN_EX+"€")
   print(Fore.LIGHTBLUE_EX+"_______________________")

@@ -66,7 +66,7 @@ elif introd == "2":
   Daf["Quantia (€):"]=qua
   print(Fore.BLUE,Daf)
   time.sleep(1)
-  print(Fore.LIGHTGREEN_EX + "A equipa Vitality comprou:", introdumk,Fore.LIGHTGREEN_EX+", por", qua,Fore.LIGHTGREEN_EX+"€")
+  print(Fore.LIGHTGREEN_EX + "A equipa Vitality comprou:", introdumk,Fore.LIGHTGREEN_EX+"por", qua,Fore.LIGHTGREEN_EX+"€")
   print(Fore.LIGHTBLUE_EX + "_______________________")
  elif introdum == "2":
   print(Fore.LIGHTYELLOW_EX + "Que PC deseja vender?")
@@ -78,5 +78,5 @@ elif introd == "2":
   Dados["Quantia (€):"]=QUA
   print(Fore.BLUE,Dados)
   time.sleep(1)
-  print(Fore.LIGHTGREEN_EX + "A equipa fúria comprou:", introdumkln,Fore.LIGHTGREEN_EX+",por",QUA,Fore.LIGHTGREEN_EX+"€")
+  print(Fore.LIGHTGREEN_EX + "A equipa fúria comprou:", introdumkln,Fore.LIGHTGREEN_EX+"por",QUA,Fore.LIGHTGREEN_EX+"€")
   print(Fore.LIGHTBLUE_EX+"_______________________")

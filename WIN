@@ -1,0 +1,76 @@
+from colorama import Fore
+import time
+print(Fore.LIGHTBLUE_EX+"_______________________")
+print(Fore.LIGHTBLUE_EX+"'                     '")
+print(Fore.LIGHTBLUE_EX+"'                     '")
+print(Fore.LIGHTBLUE_EX+"'         WIN         '")
+print(Fore.LIGHTBLUE_EX+"'                     '")
+print(Fore.LIGHTBLUE_EX+"'                     '")
+print(Fore.LIGHTBLACK_EX+"======== MENU ========")
+print(Fore.LIGHTYELLOW_EX+"1- COMPRAR")
+print(Fore.LIGHTYELLOW_EX+"2- VENDER")
+introd=input(Fore.LIGHTWHITE_EX+"» ")
+if introd == "1":
+  print(Fore.LIGHTBLACK_EX+"====SUB-MENU====")
+  print(Fore.LIGHTYELLOW_EX+"1- ACESSÓRIOS")
+  print(Fore.LIGHTYELLOW_EX + "2- PCS")
+  introdu = input(Fore.LIGHTWHITE_EX + "» ")
+  if introdu == "1":
+   print(Fore.LIGHTYELLOW_EX+"1- Irok Mercury68 Pro por 101.753 €")
+   print(Fore.LIGHTYELLOW_EX+"2- Razer BlackShark V2 X por 43.39 €")
+   print(Fore.LIGHTYELLOW_EX+"3- Logitech G502 Lightspeed Wireless Gaming Mouse por 60.95 €")
+   print(Fore.LIGHTYELLOW_EX +"4- Razer Gigantus V2 por 11.99 €")
+   introdul = input(Fore.LIGHTWHITE_EX + "» ")
+   if introdul == "1":
+    print(Fore.LIGHTGREEN_EX+"Irok Mercury68 Pro comprado!")
+    print(Fore.LIGHTBLUE_EX + "_______________________")
+   elif introdul == "2":
+    print(Fore.LIGHTGREEN_EX+"Razer BlackShark V2 X comprado!")
+    print(Fore.LIGHTBLUE_EX + "_______________________")
+   elif introdul == "3":
+    print(Fore.LIGHTGREEN_EX+"Logitech G502 Lightspeed Wireless Gaming Mouse comprado!")
+    print(Fore.LIGHTBLUE_EX + "_______________________")
+   elif introdul == "4":
+    print(Fore.LIGHTGREEN_EX + "Razer Gigantus V2 comprado!")
+    print(Fore.LIGHTBLUE_EX + "_______________________")
+  elif introdu== "2":
+   print(Fore.LIGHTYELLOW_EX + "1- Alienware Aurora R16 por 2.499€")
+   print(Fore.LIGHTYELLOW_EX + "2- ASUS ROG Strix G16 por 1.899€")
+   print(Fore.LIGHTYELLOW_EX + "3- MSI Aegis RS por 2.199€")
+   print(Fore.LIGHTYELLOW_EX + "4- HP Omen 45L por 2.699€")
+   introdulk = input(Fore.LIGHTWHITE_EX + "» ")
+   if introdulk == "1":
+    print(Fore.LIGHTGREEN_EX + "Alienware Aurora R16 comprado!")
+    print(Fore.LIGHTBLUE_EX + "_______________________")
+   elif introdulk == "2":
+    print(Fore.LIGHTGREEN_EX + "ASUS ROG Strix G16 comprado!")
+    print(Fore.LIGHTBLUE_EX + "_______________________")
+   elif introdulk == "3":
+    print(Fore.LIGHTGREEN_EX + "MSI Aegis RS comprado!")
+    print(Fore.LIGHTBLUE_EX + "_______________________")
+   elif introdulk == "4":
+    print(Fore.LIGHTGREEN_EX + "HP Omen 45L comprado!")
+    print(Fore.LIGHTBLUE_EX + "_______________________")
+elif introd == "2":
+ print(Fore.LIGHTBLACK_EX+"====SUB-MENU====")
+ print(Fore.LIGHTYELLOW_EX+"1- ACESSÓRIOS")
+ print(Fore.LIGHTYELLOW_EX + "2- PCS")
+ introdum = input(Fore.LIGHTWHITE_EX + "» ")
+ if introdum == "1":
+  print(Fore.LIGHTYELLOW_EX + "Que acessório deseja vender?")
+  introdumk = input(Fore.LIGHTWHITE_EX + "» ")
+  Daf={}
+  Daf["Artigo a vender:"]=introdumk
+  print(Daf)
+  time.sleep(1)
+  print(Fore.LIGHTGREEN_EX + "A equipa Vitality comprou:", introdumk)
+  print(Fore.LIGHTBLUE_EX + "_______________________")
+ elif introdum == "2":
+  print(Fore.LIGHTYELLOW_EX + "Que PC deseja vender?")
+  introdumkln = input(Fore.LIGHTWHITE_EX + "» ")
+  Dados={}
+  Dados["Artigo a vender:"]=introdumkln
+  print(Dados)
+  time.sleep(1)
+  print(Fore.LIGHTGREEN_EX + "A equipa fúria comprou:", introdumkln)
+  print(Fore.LIGHTBLUE_EX+"_______________________")

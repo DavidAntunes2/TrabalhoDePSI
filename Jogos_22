@@ -25,10 +25,10 @@ while True:
    Dados["Telefone:"]=telefone
    Dados["Idade:"]=ID
    print(Fore.LIGHTGREEN_EX+"Conta criada com sucesso!!!",Dados)
-   print(Fore.LIGHTYELLOW_EX + "2- JOGAR")
-   print(Fore.LIGHTYELLOW_EX + "3- SAIR")
+   print(Fore.LIGHTYELLOW_EX + "1- JOGAR")
+   print(Fore.LIGHTYELLOW_EX + "2- SAIR")
    exl = input(Fore.LIGHTWHITE_EX + "» ")
-   if exl=="2":
+   if exl=="1":
     m=Fore.LIGHTGREEN_EX+"1- M"
     i=Fore.LIGHTGREEN_EX+"I"
     I= Fore.LIGHTGREEN_EX + "L"
@@ -45,6 +45,10 @@ while True:
     AS = Fore.RED + "E"
     pf = Fore.RED + "S"
     print(F,N,D,k,AS,pf)
+    AVL = Fore.YELLOW + "3- A"
+    BVL = Fore.BLUE + "T"
+    CVL = Fore.RED + "K"
+    print(AVL,BVL,CVL)
     erf=input(Fore.LIGHTWHITE_EX+"» ")
     if erf=="1":
      print(Fore.LIGHTGREEN_EX+"A instalar MILITARY")
@@ -58,7 +62,13 @@ while True:
      print(Fore.LIGHTGREEN_EX + "FORCES instalado")
      print(Fore.LIGHTBLUE_EX + "------------------")
      break
-   elif exl=="3":
+    elif erf=="3":
+     print(Fore.LIGHTGREEN_EX + "A instalar ATK")
+     time.sleep(2)
+     print(Fore.LIGHTGREEN_EX + "ATK instalado")
+     print(Fore.LIGHTBLUE_EX + "------------------")
+     break
+   elif exl=="2":
     print(Fore.LIGHTRED_EX+"Tem certeza que deseja sair")
     Sk=Fore.LIGHTRED_EX+"1- S"
     hj=Fore.LIGHTRED_EX+"i"
@@ -89,6 +99,10 @@ while True:
       AS = Fore.RED + "E"
       pf = Fore.RED + "S"
       print(F, N, D, k, AS, pf)
+      AV=Fore.YELLOW+"3- A"
+      BV=Fore.BLUE+"T"
+      CV=Fore.RED+"K"
+      print(AV,BV,CV)
       erfl = input(Fore.LIGHTWHITE_EX + "» ")
       if erfl == "1":
        print(Fore.LIGHTGREEN_EX + "A instalar MILITARY")
@@ -100,6 +114,12 @@ while True:
        print(Fore.LIGHTGREEN_EX + "A instalar FORCES")
        time.sleep(2)
        print(Fore.LIGHTGREEN_EX + "FORCES instalado")
+       print(Fore.LIGHTBLUE_EX + "------------------")
+       break
+      elif erfl=="3":
+       print(Fore.LIGHTGREEN_EX + "A instalar ATK")
+       time.sleep(2)
+       print(Fore.LIGHTGREEN_EX + "ATK instalado")
        print(Fore.LIGHTBLUE_EX + "------------------")
        break
     elif refg=="2":

@@ -79,9 +79,14 @@ while True:
     print(Sk,hj,nm,lo,kmn,qw)
     refg=input(Fore.LIGHTWHITE_EX+"» ")
     if refg=="1":
-     print(Fore.LIGHTYELLOW_EX + "1- JOGAR")
-     print(Fore.LIGHTYELLOW_EX + "2- SAIR")
-     flk=input(Fore.LIGHTWHITE_EX+"» ")
+     print(Fore.RED + "A sair...")
+     time.sleep(1)
+     print(Fore.LIGHTBLUE_EX + "------------------")
+     break
+     if refg=="2":
+      print(Fore.LIGHTYELLOW_EX + "1- JOGAR")
+      print(Fore.LIGHTYELLOW_EX + "2- SAIR")
+      flk = input(Fore.LIGHTWHITE_EX + "» ")
      if flk=="1":
       m = Fore.LIGHTGREEN_EX + "1- M"
       i = Fore.LIGHTGREEN_EX + "I"
@@ -122,11 +127,10 @@ while True:
        print(Fore.LIGHTGREEN_EX + "ATK instalado")
        print(Fore.LIGHTBLUE_EX + "------------------")
        break
-    elif refg=="2":
-     print(Fore.RED+"A sair...")
-     time.sleep(1)
-     print(Fore.LIGHTBLUE_EX + "------------------")
-     break
+     elif flk=="2":
+      print(Fore.RED+"A sair...")
+      time.sleep(1)
+      print(Fore.LIGHTBLUE_EX + "------------------")
  elif ex=="2":
   print(Fore.RED+"A sair...")
   time.sleep(1)

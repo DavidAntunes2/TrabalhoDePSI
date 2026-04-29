@@ -112,3 +112,5 @@ while True:
   time.sleep(1)
   print(Fore.LIGHTBLUE_EX + "------------------")
   break
+ else:
+  print(Fore.LIGHTRED_EX+"Informação incorreta!")

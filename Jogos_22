@@ -1,0 +1,114 @@
+from colorama import Fore
+import time
+print(Fore.LIGHTBLUE_EX+"------------------")
+print(Fore.LIGHTBLUE_EX+"'                '")
+print(Fore.LIGHTBLUE_EX+"'                '")
+print(Fore.LIGHTBLUE_EX+"'     GAME0N     '")
+print(Fore.LIGHTBLUE_EX+"'                '")
+print(Fore.LIGHTBLUE_EX+"'                '")
+while True:
+ print(Fore.LIGHTGREEN_EX+"1- REGISTER")
+ print(Fore.LIGHTRED_EX+"2- SAIR")
+ ex=input(Fore.LIGHTWHITE_EX+"» ")
+ if ex=="1":
+  ID = int(input(Fore.LIGHTYELLOW_EX+"Digite uma idade: "))
+  if ID < 18:
+   print(Fore.LIGHTRED_EX+"És menor!!!")
+   break
+  elif ID ==18 or ID < 116:
+   NO=input(Fore.LIGHTYELLOW_EX+"Digite um nome: ")
+   EM=input(Fore.LIGHTYELLOW_EX+"Digite um email: ")
+   telefone=int(input(Fore.LIGHTYELLOW_EX+"Digite um número de telefone: "))
+   Dados={}
+   Dados["Nome:"]=NO
+   Dados["Email:"]=EM
+   Dados["Telefone:"]=telefone
+   Dados["Idade:"]=ID
+   print(Fore.LIGHTGREEN_EX+"Conta criada com sucesso!!!",Dados)
+   print(Fore.LIGHTYELLOW_EX + "2- JOGAR")
+   print(Fore.LIGHTYELLOW_EX + "3- SAIR")
+   exl = input(Fore.LIGHTWHITE_EX + "» ")
+   if exl=="2":
+    m=Fore.LIGHTGREEN_EX+"1- M"
+    i=Fore.LIGHTGREEN_EX+"I"
+    I= Fore.LIGHTGREEN_EX + "L"
+    l = Fore.LIGHTGREEN_EX + "I"
+    T= Fore.GREEN+"T"
+    g = Fore.GREEN + "A"
+    j = Fore.GREEN + "R"
+    q = Fore.GREEN + "Y"
+    print(m,i,I,l,T,g,j,q)
+    F=Fore.LIGHTRED_EX+"2- F"
+    N=Fore.LIGHTRED_EX+"O"
+    D = Fore.LIGHTRED_EX + "R"
+    k = Fore.RED + "C"
+    AS = Fore.RED + "E"
+    pf = Fore.RED + "S"
+    print(F,N,D,k,AS,pf)
+    erf=input(Fore.LIGHTWHITE_EX+"» ")
+    if erf=="1":
+     print(Fore.LIGHTGREEN_EX+"A instalar MILITARY")
+     time.sleep(2)
+     print(Fore.LIGHTGREEN_EX + "Military instalado")
+     print(Fore.LIGHTBLUE_EX + "------------------")
+     break
+    elif erf=="2":
+     print(Fore.LIGHTGREEN_EX+"A instalar FORCES")
+     time.sleep(2)
+     print(Fore.LIGHTGREEN_EX + "FORCES instalado")
+     print(Fore.LIGHTBLUE_EX + "------------------")
+     break
+   elif exl=="3":
+    print(Fore.LIGHTRED_EX+"Tem certeza que deseja sair")
+    Sk=Fore.LIGHTRED_EX+"1- S"
+    hj=Fore.LIGHTRED_EX+"i"
+    nm = Fore.LIGHTRED_EX + "m"
+    lo = Fore.LIGHTGREEN_EX + "2- N"
+    kmn = Fore.LIGHTGREEN_EX + "ã"
+    qw = Fore.LIGHTGREEN_EX + "o"
+    print(Sk,hj,nm,lo,kmn,qw)
+    refg=input(Fore.LIGHTWHITE_EX+"» ")
+    if refg=="1":
+     print(Fore.LIGHTYELLOW_EX + "1- JOGAR")
+     print(Fore.LIGHTYELLOW_EX + "2- SAIR")
+     flk=input(Fore.LIGHTWHITE_EX+"» ")
+     if flk=="1":
+      m = Fore.LIGHTGREEN_EX + "1- M"
+      i = Fore.LIGHTGREEN_EX + "I"
+      I = Fore.LIGHTGREEN_EX + "L"
+      l = Fore.LIGHTGREEN_EX + "I"
+      T = Fore.GREEN + "T"
+      g = Fore.GREEN + "A"
+      j = Fore.GREEN + "R"
+      q = Fore.GREEN + "Y"
+      print(m, i, I, l, T, g, j, q)
+      F = Fore.LIGHTRED_EX + "2- F"
+      N = Fore.LIGHTRED_EX + "O"
+      D = Fore.LIGHTRED_EX + "R"
+      k = Fore.RED + "C"
+      AS = Fore.RED + "E"
+      pf = Fore.RED + "S"
+      print(F, N, D, k, AS, pf)
+      erfl = input(Fore.LIGHTWHITE_EX + "» ")
+      if erfl == "1":
+       print(Fore.LIGHTGREEN_EX + "A instalar MILITARY")
+       time.sleep(2)
+       print(Fore.LIGHTGREEN_EX + "MILITARY instalado")
+       print(Fore.LIGHTBLUE_EX + "------------------")
+       break
+      elif erfl == "2":
+       print(Fore.LIGHTGREEN_EX + "A instalar FORCES")
+       time.sleep(2)
+       print(Fore.LIGHTGREEN_EX + "FORCES instalado")
+       print(Fore.LIGHTBLUE_EX + "------------------")
+       break
+    elif refg=="2":
+     print(Fore.RED+"A sair...")
+     time.sleep(1)
+     print(Fore.LIGHTBLUE_EX + "------------------")
+     break
+ elif ex=="2":
+  print(Fore.RED+"A sair...")
+  time.sleep(1)
+  print(Fore.LIGHTBLUE_EX + "------------------")
+  break

@@ -80,3 +80,5 @@ elif introd == "2":
   time.sleep(1)
   print(Fore.LIGHTGREEN_EX + "A equipa fúria comprou:", introdumkln)
   print(Fore.LIGHTBLUE_EX+"_______________________")
+else:
+ print(Fore.LIGHTRED_EX+"Dados incorretos!!!")

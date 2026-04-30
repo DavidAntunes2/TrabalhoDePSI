@@ -15,7 +15,7 @@ while True:
   if ID < 18:
    print(Fore.LIGHTRED_EX+"És menor!!!")
    break
-  elif ID ==18 or ID <= 116:
+  elif ID >=18 or ID < 116:
    NO=input(Fore.LIGHTYELLOW_EX+"Digite um nome: ")
    EM=input(Fore.LIGHTYELLOW_EX+"Digite um email: ")
    telefone=int(input(Fore.LIGHTYELLOW_EX+"Digite um número de telefone: "))
@@ -25,10 +25,10 @@ while True:
    Dados["Telefone:"]=telefone
    Dados["Idade:"]=ID
    print(Fore.LIGHTGREEN_EX+"Conta criada com sucesso!!!",Dados)
-   print(Fore.LIGHTYELLOW_EX + "1- JOGAR")
-   print(Fore.LIGHTYELLOW_EX + "2- SAIR")
+   print(Fore.LIGHTYELLOW_EX + "2- JOGAR")
+   print(Fore.LIGHTYELLOW_EX + "3- SAIR")
    exl = input(Fore.LIGHTWHITE_EX + "» ")
-   if exl=="1":
+   if exl=="2":
     m=Fore.LIGHTGREEN_EX+"1- M"
     i=Fore.LIGHTGREEN_EX+"I"
     I= Fore.LIGHTGREEN_EX + "L"
@@ -45,10 +45,6 @@ while True:
     AS = Fore.RED + "E"
     pf = Fore.RED + "S"
     print(F,N,D,k,AS,pf)
-    AVL = Fore.YELLOW + "3- A"
-    BVL = Fore.BLUE + "T"
-    CVL = Fore.RED + "K"
-    print(AVL,BVL,CVL)
     erf=input(Fore.LIGHTWHITE_EX+"» ")
     if erf=="1":
      print(Fore.LIGHTGREEN_EX+"A instalar MILITARY")
@@ -62,13 +58,7 @@ while True:
      print(Fore.LIGHTGREEN_EX + "FORCES instalado")
      print(Fore.LIGHTBLUE_EX + "------------------")
      break
-    elif erf=="3":
-     print(Fore.LIGHTGREEN_EX + "A instalar ATK")
-     time.sleep(2)
-     print(Fore.LIGHTGREEN_EX + "ATK instalado")
-     print(Fore.LIGHTBLUE_EX + "------------------")
-     break
-   elif exl=="2":
+   elif exl=="3":
     print(Fore.LIGHTRED_EX+"Tem certeza que deseja sair")
     Sk=Fore.LIGHTRED_EX+"1- S"
     hj=Fore.LIGHTRED_EX+"i"
@@ -79,14 +69,9 @@ while True:
     print(Sk,hj,nm,lo,kmn,qw)
     refg=input(Fore.LIGHTWHITE_EX+"» ")
     if refg=="1":
-     print(Fore.RED + "A sair...")
-     time.sleep(1)
-     print(Fore.LIGHTBLUE_EX + "------------------")
-     break
-     if refg=="2":
-      print(Fore.LIGHTYELLOW_EX + "1- JOGAR")
-      print(Fore.LIGHTYELLOW_EX + "2- SAIR")
-      flk = input(Fore.LIGHTWHITE_EX + "» ")
+     print(Fore.LIGHTYELLOW_EX + "1- JOGAR")
+     print(Fore.LIGHTYELLOW_EX + "2- SAIR")
+     flk=input(Fore.LIGHTWHITE_EX+"» ")
      if flk=="1":
       m = Fore.LIGHTGREEN_EX + "1- M"
       i = Fore.LIGHTGREEN_EX + "I"
@@ -104,10 +89,6 @@ while True:
       AS = Fore.RED + "E"
       pf = Fore.RED + "S"
       print(F, N, D, k, AS, pf)
-      AV=Fore.YELLOW+"3- A"
-      BV=Fore.BLUE+"T"
-      CV=Fore.RED+"K"
-      print(AV,BV,CV)
       erfl = input(Fore.LIGHTWHITE_EX + "» ")
       if erfl == "1":
        print(Fore.LIGHTGREEN_EX + "A instalar MILITARY")
@@ -121,20 +102,13 @@ while True:
        print(Fore.LIGHTGREEN_EX + "FORCES instalado")
        print(Fore.LIGHTBLUE_EX + "------------------")
        break
-      elif erfl=="3":
-       print(Fore.LIGHTGREEN_EX + "A instalar ATK")
-       time.sleep(2)
-       print(Fore.LIGHTGREEN_EX + "ATK instalado")
-       print(Fore.LIGHTBLUE_EX + "------------------")
-       break
-     elif flk=="2":
-      print(Fore.RED+"A sair...")
-      time.sleep(1)
-      print(Fore.LIGHTBLUE_EX + "------------------")
+    elif refg=="2":
+     print(Fore.RED+"A sair...")
+     time.sleep(1)
+     print(Fore.LIGHTBLUE_EX + "------------------")
+     break
  elif ex=="2":
   print(Fore.RED+"A sair...")
   time.sleep(1)
   print(Fore.LIGHTBLUE_EX + "------------------")
   break
- else:
-  print(Fore.LIGHTRED_EX+"Informação incorreta!")

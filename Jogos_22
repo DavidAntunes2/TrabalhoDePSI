@@ -15,7 +15,7 @@ while True:
   if ID < 18:
    print(Fore.LIGHTRED_EX+"És menor!!!")
    break
-  elif ID >=18 or ID < 116:
+  elif ID >=18 and ID <= 116:
    NO=input(Fore.LIGHTYELLOW_EX+"Digite um nome: ")
    EM=input(Fore.LIGHTYELLOW_EX+"Digite um email: ")
    telefone=int(input(Fore.LIGHTYELLOW_EX+"Digite um número de telefone: "))

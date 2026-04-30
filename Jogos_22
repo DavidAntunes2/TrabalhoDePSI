@@ -45,6 +45,13 @@ while True:
     AS = Fore.RED + "E"
     pf = Fore.RED + "S"
     print(F,N,D,k,AS,pf)
+    ABJq = Fore.LIGHTYELLOW_EX + "3- A"
+    GHBe = Fore.LIGHTBLUE_EX + "T"
+    jklN = Fore.LIGHTWHITE_EX + "E"
+    gmM = Fore.LIGHTBLACK_EX + "C"
+    HNJl = Fore.LIGHTRED_EX + "K"
+    GHJKLj = Fore.LIGHTGREEN_EX + "S"
+    print(ABJq, GHBe, jklN, gmM, HNJl, GHJKLj)
     erf=input(Fore.LIGHTWHITE_EX+"» ")
     if erf=="1":
      print(Fore.LIGHTGREEN_EX+"A instalar MILITARY")
@@ -58,6 +65,12 @@ while True:
      print(Fore.LIGHTGREEN_EX + "FORCES instalado")
      print(Fore.LIGHTBLUE_EX + "------------------")
      break
+    elif erf=="3":
+     print(Fore.LIGHTGREEN_EX + "A instalar ATECKS")
+     time.sleep(2)
+     print(Fore.LIGHTGREEN_EX + "ATECKS instalado")
+     print(Fore.LIGHTBLUE_EX + "------------------")
+     break
    elif exl=="2":
     print(Fore.LIGHTRED_EX+"Tem certeza que deseja sair")
     Sk=Fore.LIGHTRED_EX+"1- S"
@@ -68,7 +81,7 @@ while True:
     qw = Fore.LIGHTGREEN_EX + "o"
     print(Sk,hj,nm,lo,kmn,qw)
     refg=input(Fore.LIGHTWHITE_EX+"» ")
-    if refg=="1":
+    if refg=="2":
      print(Fore.LIGHTYELLOW_EX + "1- JOGAR")
      print(Fore.LIGHTYELLOW_EX + "2- SAIR")
      flk=input(Fore.LIGHTWHITE_EX+"» ")
@@ -89,6 +102,13 @@ while True:
       AS = Fore.RED + "E"
       pf = Fore.RED + "S"
       print(F, N, D, k, AS, pf)
+      ABJ=Fore.LIGHTYELLOW_EX+"3- A"
+      GHB=Fore.LIGHTBLUE_EX+"T"
+      jkl=Fore.LIGHTWHITE_EX+"E"
+      gm=Fore.LIGHTBLACK_EX+"C"
+      HNJ=Fore.LIGHTRED_EX+"K"
+      GHJKL=Fore.LIGHTGREEN_EX+"S"
+      print(ABJ, GHB,jkl,gm, HNJ, GHJKL)
       erfl = input(Fore.LIGHTWHITE_EX + "» ")
       if erfl == "1":
        print(Fore.LIGHTGREEN_EX + "A instalar MILITARY")
@@ -102,7 +122,13 @@ while True:
        print(Fore.LIGHTGREEN_EX + "FORCES instalado")
        print(Fore.LIGHTBLUE_EX + "------------------")
        break
-    elif refg=="2":
+      elif erfl == "3":
+       print(Fore.LIGHTGREEN_EX + "A instalar ATECKS")
+       time.sleep(2)
+       print(Fore.LIGHTGREEN_EX + "ATECKS instalado")
+       print(Fore.LIGHTBLUE_EX + "------------------")
+       break
+    elif refg=="1":
      print(Fore.RED+"A sair...")
      time.sleep(1)
      print(Fore.LIGHTBLUE_EX + "------------------")

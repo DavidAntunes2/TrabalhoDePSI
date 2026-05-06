@@ -1,0 +1,97 @@
+from colorama import Fore
+import time
+import random
+while True:
+ print(Fore.LIGHTBLUE_EX+"╔═════════════════════════════╗")
+ print(Fore.LIGHTBLUE_EX+"║                             ║")
+ print(Fore.LIGHTBLUE_EX+"║═════ MOEDAS AOS MONTES ═════║")
+ print(Fore.LIGHTBLUE_EX+"║                             ║")
+ print(Fore.LIGHTBLUE_EX+"╚═════════════════════════════╝")
+ Ida=int(input(Fore.BLUE+"Qual é sua idade: "))
+ if Ida<=18 and Ida>=1:
+  print(Fore.LIGHTRED_EX+"És menor!!!")
+  print(Fore.LIGHTRED_EX+"A fechar")
+  break
+ elif Ida>=18 and Ida<=116:
+  nome=input(Fore.YELLOW+"Qual é o seu nome completo: ")
+  depositar=input(Fore.YELLOW+"Para jogar tem de depositar 4€ sim/não:")
+  if depositar=="não":
+   print(Fore.RED+"Até á próxima")
+   break
+  elif depositar=="sim":
+   conta={}
+   conta["Nome:"]=nome
+   conta["Idade:"]=Ida
+   print(Fore.GREEN+"Sua conta foi criada com sucesso:",conta)
+   print(Fore.LIGHTYELLOW_EX+"\n╔═════════════════════════════════════════════╗")
+   print(Fore.LIGHTYELLOW_EX+"║    Qual número acha que foi selecionado?    ║")
+   print(Fore.LIGHTYELLOW_EX+"╚═════════════════════════════════════════════╝")
+   Resposta=int(input(Fore.LIGHTWHITE_EX+"» "))
+   print(Fore.GREEN+"A girar")
+   time.sleep(0.8)
+   girar=random.randint(1,9)
+   if girar==1:
+    if Resposta=="907315":
+     print(Fore.LIGHTGREEN_EX+"Acertas-te!!!")
+     break
+    else:
+     print(Fore.RED+"Erras-te!!!")
+     print(Fore.LIGHTRED_EX+"A resposta correta era 907315")
+   elif girar==2:
+    if Resposta == "409672":
+     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
+     break
+    else:
+     print(Fore.RED+"Erras-te!!!")
+     print(Fore.LIGHTRED_EX+"A resposta correta era 409672")
+   elif girar==3:
+    if Resposta == " 258967":
+     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
+     break
+    else:
+     print(Fore.RED+"Erras-te!!!")
+     print(Fore.LIGHTRED_EX+"A resposta correta era 258967")
+   elif girar==4:
+    if Resposta == "347813":
+     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
+     break
+    else:
+     print(Fore.RED+"Erras-te!!!")
+     print(Fore.LIGHTRED_EX+"A resposta correta era 347813")
+   elif girar==5:
+    if Resposta == "793501":
+     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
+     break
+    else:
+     print(Fore.RED+"Erras-te!!!")
+     print(Fore.LIGHTRED_EX+"A resposta correta era 793501")
+   elif girar==6:
+    if Resposta == "103759":
+     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
+     break
+    else:
+     print(Fore.RED+"Erras-te!!!")
+     print(Fore.LIGHTRED_EX+"A resposta correta era 103759")
+   elif girar==7:
+    if Resposta == "303971":
+     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
+     break
+    else:
+     print(Fore.RED+"Erras-te!!!")
+     print(Fore.LIGHTRED_EX+"A resposta correta era 303971")
+   elif girar==8:
+    if Resposta == "709131":
+     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
+     break
+    else:
+     print(Fore.RED+"Erras-te!!!")
+     print(Fore.LIGHTRED_EX+"A resposta correta era 709131")
+   elif girar==9:
+    if Resposta == "802470":
+     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
+     break
+    else:
+     print(Fore.RED+"Erras-te!!!")
+     print(Fore.LIGHTRED_EX+"A resposta correta era 802470")
+ else:
+  print(Fore.LIGHTRED_EX+"Idade impossível!!!")

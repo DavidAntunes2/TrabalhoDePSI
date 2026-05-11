@@ -1,97 +1,91 @@
-from colorama import Fore
 import time
-import random
+from colorama import Fore
 while True:
  print(Fore.LIGHTBLUE_EX+"╔═════════════════════════════╗")
  print(Fore.LIGHTBLUE_EX+"║                             ║")
- print(Fore.LIGHTBLUE_EX+"║═════ MOEDAS AOS MONTES ═════║")
+ linhad=Fore.LIGHTBLUE_EX+("║══════")
+ tit=Fore.LIGHTYELLOW_EX+" OURO DE VERDADE "
+ linh=Fore.LIGHTBLUE_EX+"══════║"
+ print(f"{linhad}{tit}{linh}")
  print(Fore.LIGHTBLUE_EX+"║                             ║")
  print(Fore.LIGHTBLUE_EX+"╚═════════════════════════════╝")
- Ida=int(input(Fore.BLUE+"Qual é sua idade: "))
- if Ida<=18 and Ida>=1:
-  print(Fore.LIGHTRED_EX+"És menor!!!")
-  print(Fore.LIGHTRED_EX+"A fechar")
+ print(Fore.LIGHTGREEN_EX+"Olá, bem vindo ao site de jogos!!!")
+ print(Fore.LIGHTYELLOW_EX+"\n1- NEXT    2- EXIT")
+ resp = input(Fore.LIGHTWHITE_EX+"» ")
+ if resp=="2":
+  print(Fore.RED + "╔══════════════════════════════╗")
+  a = Fore.RED + "║                              ║"
+  bb = Fore.RED + "               ║"
+  b = Fore.LIGHTRED_EX + "║           ATÉ Á PRÓXIMA           ║"
+  c = Fore.LIGHTRED_EX + "║           A FECHAR           ║"
+  print(f"{a}{bb}")
+  print(b)
+  print(c)
+  print(Fore.RED + "║                              ║")
+  print(Fore.RED + "╚══════════════════════════════╝")
+  time.sleep(0.5)
   break
- elif Ida>=18 and Ida<=116:
-  nome=input(Fore.YELLOW+"Qual é o seu nome completo: ")
-  depositar=input(Fore.YELLOW+"Para jogar tem de depositar 4€ sim/não:")
-  if depositar=="não":
-   print(Fore.RED+"Até á próxima")
+ elif resp=="1":
+  print(Fore.LIGHTYELLOW_EX+"\n╔══════════════════════════════════════╗")
+  linhadf=Fore.LIGHTYELLOW_EX+("║═══")
+  titf=Fore.LIGHTWHITE_EX+" PREENCHA O SEGUINTE FORMULÁRIO "
+  linhf=Fore.LIGHTYELLOW_EX+"═══║"
+  print(f"{linhadf}{titf}{linhf}")
+  print(Fore.LIGHTYELLOW_EX+"╚══════════════════════════════════════╝")
+  id = int(input(Fore.BLUE + "Introduza a sua idade: "))
+  if id < 18 and id >= 1:
+   print(Fore.RED + "╔══════════════════════════════╗")
+   a = Fore.RED + "║               "
+   bb = Fore.RED + "               ║"
+   b = Fore.LIGHTRED_EX + "║           ÉS MENOR           ║"
+   c = Fore.LIGHTRED_EX + "║           A FECHAR           ║"
+   print(f"{a}{bb}")
+   print(b)
+   print(c)
+   print(Fore.RED + "║                              ║")
+   print(Fore.RED + "╚══════════════════════════════╝")
+   time.sleep(0.5)
    break
-  elif depositar=="sim":
-   conta={}
-   conta["Nome:"]=nome
-   conta["Idade:"]=Ida
-   print(Fore.GREEN+"Sua conta foi criada com sucesso:",conta)
-   print(Fore.LIGHTYELLOW_EX+"\n╔═════════════════════════════════════════════╗")
-   print(Fore.LIGHTYELLOW_EX+"║    Qual número acha que foi selecionado?    ║")
-   print(Fore.LIGHTYELLOW_EX+"╚═════════════════════════════════════════════╝")
-   Resposta=int(input(Fore.LIGHTWHITE_EX+"» "))
-   print(Fore.GREEN+"A girar")
-   time.sleep(0.8)
-   girar=random.randint(1,9)
-   if girar==1:
-    if Resposta=="907315":
-     print(Fore.LIGHTGREEN_EX+"Acertas-te!!!")
-     break
+  elif id>=18 and id<=116:
+    nome=input(Fore.BLUE+"Introduza seu nome completo: ")
+    asd=len(nome)
+    if asd>=1 and asd<=2253:
+     cont={}
+     cont["Seu nome:"]=nome
+     cont["Sua idade:"]=id
+     print(Fore.LIGHTGREEN_EX+"Sua conta foi criada com sucesso!",cont)
+     print(Fore.LIGHTYELLOW_EX+"\n╔══════════════════════════════════════╗")
+     print(Fore.LIGHTYELLOW_EX+"║                                      ║")
+     linhadfg = Fore.LIGHTYELLOW_EX + ("║")
+     titfg = Fore.LIGHTWHITE_EX + " 1- ROLETA"
+     linhfg = Fore.LIGHTYELLOW_EX + "             ║"
+     print(f"{linhadfg}{titfg}{linhfg}")
+     print(Fore.LIGHTYELLOW_EX + "║                                      ║")
+     linhadfggg = Fore.LIGHTYELLOW_EX + ("║")
+     titfggg = Fore.LIGHTWHITE_EX + " 2- CARTAS"
+     linhfggg = Fore.LIGHTYELLOW_EX + "                  ║"
+     print(f"{linhadfggg}{titfggg}{linhfggg}")
+     print(Fore.LIGHTYELLOW_EX + "║                                      ║")
+     linhadfgggg = Fore.LIGHTYELLOW_EX + ("║")
+     titfgggg = Fore.LIGHTWHITE_EX + " 3- JOGO ESPECIAL"
+     linhfgggg = Fore.LIGHTYELLOW_EX + "                            ║"
+     print(f"{linhadfgggg}{titfgggg}{linhfgggg}")
+     linhadfggggg = Fore.LIGHTYELLOW_EX + ("║")
+     titfggggg = Fore.LIGHTWHITE_EX + " 4- EXIT"
+     linhfggggg = Fore.LIGHTYELLOW_EX + "                              ║"
+     print(f"{linhadfggggg}{titfggggg}{linhfggggg}")
+     print(Fore.LIGHTYELLOW_EX + "║                                      ║")
+     print(Fore.LIGHTYELLOW_EX + "╚══════════════════════════════════════╝")
     else:
-     print(Fore.RED+"Erras-te!!!")
-     print(Fore.LIGHTRED_EX+"A resposta correta era 907315")
-   elif girar==2:
-    if Resposta == "409672":
-     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
-     break
-    else:
-     print(Fore.RED+"Erras-te!!!")
-     print(Fore.LIGHTRED_EX+"A resposta correta era 409672")
-   elif girar==3:
-    if Resposta == " 258967":
-     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
-     break
-    else:
-     print(Fore.RED+"Erras-te!!!")
-     print(Fore.LIGHTRED_EX+"A resposta correta era 258967")
-   elif girar==4:
-    if Resposta == "347813":
-     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
-     break
-    else:
-     print(Fore.RED+"Erras-te!!!")
-     print(Fore.LIGHTRED_EX+"A resposta correta era 347813")
-   elif girar==5:
-    if Resposta == "793501":
-     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
-     break
-    else:
-     print(Fore.RED+"Erras-te!!!")
-     print(Fore.LIGHTRED_EX+"A resposta correta era 793501")
-   elif girar==6:
-    if Resposta == "103759":
-     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
-     break
-    else:
-     print(Fore.RED+"Erras-te!!!")
-     print(Fore.LIGHTRED_EX+"A resposta correta era 103759")
-   elif girar==7:
-    if Resposta == "303971":
-     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
-     break
-    else:
-     print(Fore.RED+"Erras-te!!!")
-     print(Fore.LIGHTRED_EX+"A resposta correta era 303971")
-   elif girar==8:
-    if Resposta == "709131":
-     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
-     break
-    else:
-     print(Fore.RED+"Erras-te!!!")
-     print(Fore.LIGHTRED_EX+"A resposta correta era 709131")
-   elif girar==9:
-    if Resposta == "802470":
-     print(Fore.LIGHTGREEN_EX + "Acertas-te!!!")
-     break
-    else:
-     print(Fore.RED+"Erras-te!!!")
-     print(Fore.LIGHTRED_EX+"A resposta correta era 802470")
- else:
-  print(Fore.LIGHTRED_EX+"Idade impossível!!!")
+     print(Fore.RED + "╔════════════════════════════╗")
+     aa = Fore.RED + "║              "
+     bbb = Fore.RED + "              ║"
+     bbg = Fore.LIGHTRED_EX + "║      NOME IMPOSSÍVEL       ║"
+     cd = Fore.LIGHTRED_EX + "║                            ║"
+     print(f"{aa}{bbb}")
+     print(bbg)
+     print(cd)
+     print(Fore.RED + "╚════════════════════════════╝")
+
+
+

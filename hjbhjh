@@ -11,7 +11,7 @@ while True:
  print(Fore.LIGHTBLUE_EX+"║                             ║")
  print(Fore.LIGHTBLUE_EX+"╚═════════════════════════════╝")
  print(Fore.LIGHTGREEN_EX+"Olá, bem vindo ao site!!!")
- print(Fore.LIGHTYELLOW_EX+"\n1- NEXT    2- EXIT")
+ print(Fore.LIGHTYELLOW_EX+"1- NEXT    2- EXIT")
  resp = input(Fore.LIGHTWHITE_EX+"» ")
  if resp=="2":
   print(Fore.RED + "╔══════════════════════════════╗")
@@ -51,8 +51,8 @@ while True:
     asd=len(nome)
     if asd>=1 and asd<=2253:
      cont={}
-     cont["Seu nome:"]=nome
-     cont["Sua idade:"]=id
+     cont["Seu nome"]=nome
+     cont["Sua idade"]=id
      print(Fore.LIGHTGREEN_EX+"Sua conta foi criada com sucesso!",cont)
      print(Fore.LIGHTRED_EX+"\n╔══════════════════════════════════════╗")
      print(Fore.LIGHTRED_EX+"║                                      ║")

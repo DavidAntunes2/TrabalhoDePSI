@@ -107,18 +107,51 @@ while True:
        print(Fore.GREEN + "AINDA A FAZER")
      elif RESSPC=="2":
       print(Fore.GREEN + "AINDA A FAZER")
-     elif RESSPC=="3":
-      print(Fore.GREEN + "AINDA A FAZER")
+      import time
+      from colorama import Fore
+
+     elif RESSPC == "3":
+      tempo = 10
+
+      while tempo > 0:
+
+       pg = input(
+       Fore.LIGHTYELLOW_EX +
+       "Oito segundos para fazer. Quanto é 2+2*2:2+2222-3333= "
+          )
+
+       tempo -= 1
+       time.sleep(1)
+
+       if pg == resposth:
+        print(Fore.GREEN + "╔═════════════════════════════╗")
+        print(Fore.GREEN + "║                             ║")
+
+        linhadfff = Fore.GREEN + "║"
+        titfff = Fore.LIGHTGREEN_EX + " Acertas-te!!!"
+        jnjf = Fore.GREEN + "               ║"
+
+        print(f"{linhadfff}{titfff}{jnjf}")
+
+        print(Fore.GREEN + "║                             ║")
+
+        LKJKf = Fore.GREEN + "║ "
+        LKJMf = Fore.LIGHTGREEN_EX + "GANHAS-TE 2 MILHÕES(€)"
+        LKLKKf = Fore.GREEN + "      ║"
+
+        print(f"{LKJKf}{LKJMf}{LKLKKf}")
+
+        print(Fore.GREEN + "║                             ║")
+        print(Fore.GREEN + "╚═════════════════════════════╝")
+
+        break
+
+      if tempo == 0:
+       print(Fore.RED + "══════ O tempo acabou, perdeste ══════")
+      else:
+       print(Fore.RED + "══════ Erras-te!!! A resposta certa era ══════")
      elif RESSPC=="4":
       print(Fore.GREEN + "AINDA A FAZER")
-     else:
-      print(Fore.RED + "╔═══════════════════════════════╗")
-      print(Fore.LIGHTRED_EX + "║                               ║")
-      bbgacf = Fore.LIGHTRED_EX + "║      RESPOSTA IMPOSSÍVEL      ║"
-      cdacf = Fore.LIGHTRED_EX + "║                               ║"
-      print(bbgacf)
-      print(cdacf)
-      print(Fore.RED + "╚═══════════════════════════════╝")
     else:
      print(Fore.RED + "╔════════════════════════════╗")
      aa = Fore.RED + "║              "
@@ -129,10 +162,15 @@ while True:
      print(bbg)
      print(cd)
      print(Fore.RED + "╚════════════════════════════╝")
-  else:
-   print(Fore.GREEN + "AINDA A FAZER")
  else:
-  print(Fore.GREEN + "AINDA A FAZER")
+  print(Fore.RED + "╔═══════════════════════════════╗")
+  print(Fore.LIGHTRED_EX + "║                               ║")
+  bbgacf = Fore.LIGHTRED_EX + "║      RESPOSTA IMPOSSÍVEL      ║"
+  cdacf = Fore.LIGHTRED_EX + "║                               ║"
+  print(bbgacf)
+  print(cdacf)
+  print(Fore.RED + "╚═══════════════════════════════╝")
+
 
 
 

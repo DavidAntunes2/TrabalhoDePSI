@@ -1,0 +1,137 @@
+import time
+from colorama import Fore
+import random
+while True:
+ print(Fore.LIGHTBLUE_EX+"╔═════════════════════════════╗")
+ print(Fore.LIGHTBLUE_EX+"║                             ║")
+ linhad=Fore.LIGHTBLUE_EX+("║══════")
+ tit=Fore.LIGHTYELLOW_EX+" OURO DE VERDADE "
+ linh=Fore.LIGHTBLUE_EX+"══════║"
+ print(f"{linhad}{tit}{linh}")
+ print(Fore.LIGHTBLUE_EX+"║                             ║")
+ print(Fore.LIGHTBLUE_EX+"╚═════════════════════════════╝")
+ print(Fore.LIGHTGREEN_EX+"Olá, bem vindo ao site!!!")
+ print(Fore.LIGHTYELLOW_EX+"\n1- NEXT    2- EXIT")
+ resp = input(Fore.LIGHTWHITE_EX+"» ")
+ if resp=="2":
+  print(Fore.RED + "╔══════════════════════════════╗")
+  a = Fore.RED + "║                              ║"
+  b = Fore.LIGHTRED_EX + "║ ATÉ Á PRÓXIMA                ║"
+  c = Fore.LIGHTRED_EX + "║ A FECHAR                     ║"
+  print(f"{a}")
+  print(b)
+  print(c)
+  print(Fore.RED + "║                              ║")
+  print(Fore.RED + "╚══════════════════════════════╝")
+  time.sleep(0.5)
+  break
+ elif resp=="1":
+  print(Fore.LIGHTYELLOW_EX+"\n╔══════════════════════════════════════╗")
+  linhadf=Fore.LIGHTYELLOW_EX+("║═══")
+  titf=Fore.LIGHTWHITE_EX+" PREENCHA O SEGUINTE FORMULÁRIO "
+  linhf=Fore.LIGHTYELLOW_EX+"═══║"
+  print(f"{linhadf}{titf}{linhf}")
+  print(Fore.LIGHTYELLOW_EX+"╚══════════════════════════════════════╝")
+  id = int(input(Fore.BLUE + "Introduza a sua idade: "))
+  if id < 18 and id >= 1:
+   print(Fore.RED + "╔══════════════════════════════╗")
+   a = Fore.RED + "║               "
+   bb = Fore.RED + "               ║"
+   b = Fore.LIGHTRED_EX + "║           ÉS MENOR           ║"
+   c = Fore.LIGHTRED_EX + "║           A FECHAR           ║"
+   print(f"{a}{bb}")
+   print(b)
+   print(c)
+   print(Fore.RED + "║                              ║")
+   print(Fore.RED + "╚══════════════════════════════╝")
+   time.sleep(0.5)
+   break
+  elif id>=18 and id<=116:
+    nome=input(Fore.BLUE+"Introduza seu nome completo: ")
+    asd=len(nome)
+    if asd>=1 and asd<=2253:
+     cont={}
+     cont["Seu nome:"]=nome
+     cont["Sua idade:"]=id
+     print(Fore.LIGHTGREEN_EX+"Sua conta foi criada com sucesso!",cont)
+     print(Fore.LIGHTRED_EX+"\n╔══════════════════════════════════════╗")
+     print(Fore.LIGHTRED_EX+"║                                      ║")
+     linhadfg = Fore.LIGHTRED_EX + ("║")
+     titfg = Fore.GREEN + " 1- ROLETA"
+     linhfg = Fore.LIGHTRED_EX + "                            ║"
+     print(f"{linhadfg}{titfg}{linhfg}")
+     print(Fore.LIGHTRED_EX + "║                                      ║")
+     linhadfggg = Fore.LIGHTRED_EX + ("║")
+     titfggg = Fore.GREEN + " 2- CARTAS"
+     linhfggg = Fore.LIGHTRED_EX + "                            ║"
+     print(f"{linhadfggg}{titfggg}{linhfggg}")
+     print(Fore.LIGHTRED_EX + "║                                      ║")
+     linhadfgggg = Fore.LIGHTRED_EX + ("║")
+     titfgggg = Fore.LIGHTGREEN_EX + " 3- JOGO ESPECIAL"
+     linhfgggg = Fore.LIGHTRED_EX + "                     ║"
+     print(f"{linhadfgggg}{titfgggg}{linhfgggg}")
+     print(Fore.LIGHTRED_EX + "║                                      ║")
+     linhadfggggg = Fore.LIGHTRED_EX + ("║")
+     titfggggg = Fore.RED + " 4- EXIT"
+     linhfggggg = Fore.LIGHTRED_EX + "                              ║"
+     print(f"{linhadfggggg}{titfggggg}{linhfggggg}")
+     print(Fore.LIGHTRED_EX + "║                                      ║")
+     print(Fore.LIGHTRED_EX + "╚══════════════════════════════════════╝")
+     RESSPC=input(Fore.LIGHTWHITE_EX+"» ")
+     if RESSPC=="1":
+      numjk=input(Fore.LIGHTYELLOW_EX+"Escolha um números de 0 a 9: ")
+      num_um=random.randint(0,9)
+      if numjk==num_um:
+       print(Fore.LIGHTGREEN_EX+"════ Acertas-te o primeiro desafio!!!════ ")
+       numjkd = input(Fore.LIGHTYELLOW_EX + "Escolha dois números de 0 a 9 e não os divida")
+       cores=random.randint(10,99)
+       if numjkd==cores:
+        print(Fore.GREEN + "╔═════════════════════════════╗")
+        print(Fore.GREEN + "║                             ║")
+        linhadff = Fore.GREEN + ("║")
+        titff = Fore.LIGHTGREEN_EX + " Acertas-te!!!"
+        jnj = Fore.GREEN + "               ║"
+        print(f"{linhadff}{titff}{jnj}")
+        print(Fore.GREEN + "║                             ║")
+        LKJK = Fore.GREEN + "║ "
+        LKJM = Fore.LIGHTGREEN_EX + "GANHAS-TE 2 MILHÕES(€)"
+        LKLKK = Fore.GREEN + "      ║"
+        print(f"{LKJK}{LKJM}{LKLKK}")
+        print(Fore.GREEN + "║                             ║")
+        print(Fore.GREEN + "╚═════════════════════════════╝")
+        break
+       else:
+        print(Fore.GREEN + "AINDA A FAZER")
+      else:
+       print(Fore.GREEN + "AINDA A FAZER")
+     elif RESSPC=="2":
+      print(Fore.GREEN + "AINDA A FAZER")
+     elif RESSPC=="3":
+      print(Fore.GREEN + "AINDA A FAZER")
+     elif RESSPC=="4":
+      print(Fore.GREEN + "AINDA A FAZER")
+     else:
+      print(Fore.RED + "╔═══════════════════════════════╗")
+      print(Fore.LIGHTRED_EX + "║                               ║")
+      bbgacf = Fore.LIGHTRED_EX + "║      RESPOSTA IMPOSSÍVEL      ║"
+      cdacf = Fore.LIGHTRED_EX + "║                               ║"
+      print(bbgacf)
+      print(cdacf)
+      print(Fore.RED + "╚═══════════════════════════════╝")
+    else:
+     print(Fore.RED + "╔════════════════════════════╗")
+     aa = Fore.RED + "║              "
+     bbb = Fore.RED + "              ║"
+     bbg = Fore.LIGHTRED_EX + "║      NOME IMPOSSÍVEL       ║"
+     cd = Fore.LIGHTRED_EX + "║                            ║"
+     print(f"{aa}{bbb}")
+     print(bbg)
+     print(cd)
+     print(Fore.RED + "╚════════════════════════════╝")
+  else:
+   print(Fore.GREEN + "AINDA A FAZER")
+ else:
+  print(Fore.GREEN + "AINDA A FAZER")
+
+
+

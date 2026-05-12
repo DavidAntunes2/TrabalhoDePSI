@@ -54,6 +54,7 @@ while True:
      cont["Seu nome"]=nome
      cont["Sua idade"]=id
      print(Fore.LIGHTGREEN_EX+"Sua conta foi criada com sucesso!",cont)
+     print(Fore.LIGHTWHITE_EX+"Só o 1 funciona!!!")
      print(Fore.LIGHTRED_EX+"\n╔══════════════════════════════════════╗")
      print(Fore.LIGHTRED_EX+"║                                      ║")
      linhadfg = Fore.LIGHTRED_EX + ("║")

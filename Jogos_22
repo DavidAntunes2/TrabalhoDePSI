@@ -63,7 +63,7 @@ while True:
   elif idad>=18 and idad<=116:
    nome= input(Fore.LIGHTWHITE_EX+"Digite o seu nome completo: ")
    v=len(nome)
-   if v<1:  
+   if v<1:
     print(Fore.RED + "______________________________")
     print(Fore.RED + "'                            '")
     print(Fore.RED + "'                            '")
@@ -84,7 +84,7 @@ while True:
     Dados["Seu número de telemóvel:"]=numero
     Dados["Seu email:"]=email
     Dados["Sua conta bancária:"]=email2
-    print(Fore.LIGHTGREEN_EX+"200 CREATED, Sua conta foi criada com sucesso:",Dados)
+    print(Fore.LIGHTGREEN_EX+"201 CREATED, Sua conta foi criada com sucesso:",Dados)
    else:
     print(Fore.RED + "______________________________")
     print(Fore.RED + "'                            '")

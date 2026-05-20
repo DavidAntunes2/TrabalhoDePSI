@@ -86,8 +86,8 @@ while True:
     Dados["Sua conta bancária:"]=email2
     print(Fore.LIGHTGREEN_EX+"201 CREATED, Sua conta foi criada com sucesso:",Dados)
     ficheiro="Utilizador.txt"
-    with open("Utilizador.txt","w", enconding="utf-8") as Ficheiro:
-     Ficheiro(Dados)
+    with open ("Utilizador.txt","w", encoding="utf-8") as ficheiro:
+     ficheiro(Dados)
     json.dump(Dados)
    else:
     print(Fore.RED + "______________________________")

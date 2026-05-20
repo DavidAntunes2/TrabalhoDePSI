@@ -43,24 +43,61 @@ while True:
  resp=input(Fore.LIGHTWHITE_EX+"» ")
  if resp=="1":
   idad=int(input(Fore.LIGHTWHITE_EX+"Digite sua idade: "))
-  if idad=>1 and idad<18:
+  if idad>=1 and idad<18:
    print(Fore.RED + "______________________________")
    print(Fore.RED + "'                            '")
    print(Fore.RED + "'                            '")
    s = Fore.RED + "'"
-   sa = Fore.LIGHTRED_EX + "       ÉS MENOR!!!"
-   SA = Fore.RED + "            '"
+   sa = Fore.LIGHTRED_EX + "         ÉS MENOR!!!"
+   SA = Fore.RED + "        '"
    print(f"{s}{sa}{SA}")
-   time.sleep(0.5)
    s2 = Fore.RED + "'"
-   sa2 = Fore.LIGHTRED_EX + "       A SAIR..."
-   SA2 = Fore.RED + "     '"
+   sa2 = Fore.LIGHTRED_EX + "         A SAIR..."
+   SA2 = Fore.RED + "          '"
+   time.sleep(0.5)
    print(f"{s2}{sa2}{SA2}")
    print(Fore.RED + "'                            '")
    print(Fore.RED + "'                            '")
    print(Fore.RED + "______________________________")
-  elif idad>18 and idad=<116:
+   break
+  elif idad>=18 and idad<=116:
    nome= input(Fore.LIGHTWHITE_EX+"Digite o seu nome completo: ")
+   v=len(nome)
+   if v<1:
+    print(Fore.RED + "______________________________")
+    print(Fore.RED + "'                            '")
+    print(Fore.RED + "'                            '")
+    s2233 = Fore.RED + "'"
+    sa2233 = Fore.LIGHTRED_EX + "      NOME INVÁLIDO!!!"
+    SA2233 = Fore.RED + "      '"
+    print(f"{s2233}{sa2233}{SA2233}")
+    print(Fore.RED + "'                            '")
+    print(Fore.RED + "'                            '")
+    print(Fore.RED + "______________________________")
+   elif v>=1 and v<=2253:
+    numero= int(input(Fore.LIGHTWHITE_EX+"Digite o seu número de telemóvel não separ os números: "))
+   else:
+    print(Fore.RED + "______________________________")
+    print(Fore.RED + "'                            '")
+    print(Fore.RED + "'                            '")
+    s22333 = Fore.RED + "'"
+    sa22333 = Fore.LIGHTRED_EX + "      NOME INVÁLIDO!!!"
+    SA22333 = Fore.RED + "      '"
+    print(f"{s22333}{sa22333}{SA22333}")
+    print(Fore.RED + "'                            '")
+    print(Fore.RED + "'                            '")
+    print(Fore.RED + "______________________________")
+  else:
+   print(Fore.RED + "______________________________")
+   print(Fore.RED + "'                            '")
+   print(Fore.RED + "'                            '")
+   s223 = Fore.RED + "'"
+   sa223 = Fore.LIGHTRED_EX + "    RESPOSTA INVÁLIDA!!!"
+   SA223 = Fore.RED + "    '"
+   print(f"{s223}{sa223}{SA223}")
+   print(Fore.RED + "'                            '")
+   print(Fore.RED + "'                            '")
+   print(Fore.RED + "______________________________")
  elif resp=="2":
   print("f")
  elif resp == "3":

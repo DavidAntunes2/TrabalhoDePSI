@@ -88,7 +88,7 @@ while True:
     ficheiro="Utilizador.txt"
     with open ("Utilizador.txt","w", encoding="utf-8") as ficheiro:
      ficheiro(Dados)
-    json.dump(Dados)
+     json.dump(Dados)
    else:
     print(Fore.RED + "______________________________")
     print(Fore.RED + "'                            '")

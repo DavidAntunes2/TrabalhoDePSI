@@ -1,0 +1,41 @@
+import random
+while True:
+ af = raw_input("Quer apostar num jogo misterioso de CS2 s/n: ")
+ if af == "s":
+  money = float(input("Introduza o dineiro: "))
+  verf=money-10
+  if verf>=1:
+   intr=input("Intorduza um numero de 0 a 4: ")
+   cert= random.randint(0,4)
+   valor = cert
+   ak= "lotus"
+   silenciada= "20 centimos"
+   awp="dragon lore"
+   usp= "10 centimos"
+   clock= "10 centimos"
+   if valor==0:
+    print(ak)
+   elif valor==1:
+    print(silenciada)
+   elif valor==2:
+    print(awp)
+   elif valor==3:
+    print(usp)
+   elif valor==4:
+    print(clock)
+   else:
+    print("INVALIDO!!!")
+    break
+  else:
+   print("NAO DA!!!")
+   break
+ elif af == "n":
+  print("Ate a proxima!!!")
+  break
+ else:
+  print("INVALIDO!!!")
+  break
+
+
+   
+

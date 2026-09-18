@@ -1,6 +1,6 @@
 import random
 while True:
- af = raw_input("Quer apostar num jogo misterioso de CS2 s/n: ")
+ af = raw_input("Quer apostar 10 euros sempre num jogo misterioso de CS2 s/n: ")
  if af == "s":
   money = float(input("Introduza o dineiro: "))
   verf=money-10

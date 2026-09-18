@@ -9,10 +9,10 @@ while True:
    cert= random.randint(0,4)
    valor = cert
    ak= "lotus"
-   silenciada= "20 centimos"
+   silenciada= "silenciada de 20 centimos"
    awp="dragon lore"
-   usp= "10 centimos"
-   clock= "10 centimos"
+   usp= "usp de 10 centimos"
+   clock= "clock de 10 centimos"
    if valor==0:
     print(ak)
    elif valor==1:

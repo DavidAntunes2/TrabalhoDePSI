@@ -1,0 +1,26 @@
+from colorama import Fore
+jogadores=[]
+print("==== Getor da fpf ====")
+print("1- adicionar jogador")
+print("==== Getor da fpf ====")
+while True:
+ def jogador():
+  nome=input(Fore.LIGHTWHITE_EX+"Introduza o seu nome: ")
+  idade=int(input(Fore.LIGHTWHITE_EX+"Introduza a sua idade: "))
+  posicao=input(Fore.LIGHTWHITE_EX+"Introduza a sua posição: ")
+  golos=int(input(Fore.LIGHTWHITE_EX+"Introduza os seus golos: "))
+  jogador={"Nome":nome,"Idade":idade,"Posição":posicao,"Número de golos":golos}
+  jogadores.append(jogador)
+  print("Jogador adicionado com sucesso!!!")
+ jogador()
+ ver = input("Deseja continuar?s/n" ).lower()
+ if ver=="n":
+  break
+
+
+
+
+
+
+
+

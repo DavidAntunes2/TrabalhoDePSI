@@ -1,0 +1,9 @@
+from colorama import Fore
+id=int(input(Fore.LIGHTCYAN_EX+"Introduz seu ano: "))
+def cal(id):
+ if id<=2026 and id>=1900:
+  return 2026-id
+ else:
+  print(Fore.LIGHTRED_EX+"Erro!!!")
+print(cal(id))
+

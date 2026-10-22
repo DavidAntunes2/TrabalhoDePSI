@@ -29,4 +29,7 @@ class gk:
   else:
    print(Fore.LIGHTRED_EX+"Erro!!!")
 p1=gk("David",16)
+ver=gk.agrupar
+print(p1)
+print(ver)
 

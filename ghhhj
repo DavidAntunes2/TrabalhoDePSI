@@ -1,0 +1,32 @@
+from colorama import Fore
+import time
+class gk:
+ def __init__(self, nome, idade):
+  self.nome=nome
+  self.idade= idade
+ def agrupar(self,idade,nome):
+  if idade>=1 and idade<=126:
+   print(Fore.LIGHTWHITE_EX+"A verificar...")
+   time.sleep(1)
+   if idade<15:
+    print(Fore.LIGHTCYAN_EX+"És infantil")
+    with open("Infantil,txt,w,encoding=utf-08") as escrever:
+     escrever.write(nome)
+   elif idade==15 or idade==16:
+    print(Fore.LIGHTCYAN_EX+"És iniciado")
+    with open("Iniciado,txt,w,encoding=utf-08") as escrever:
+     escrever.write(nome)
+   elif idade>= 17 and idade<19:
+    print(Fore.LIGHTCYAN_EX+"És juvenil")
+    with open("Juvenil,txt,w,encoding=utf-08") as escrever:
+     escrever.write(nome)
+   elif idade>19:
+    print(Fore.LIGHTCYAN_EX+"És senior")
+    with open("Senior,txt,w,encoding=utf-08") as escrever:
+     escrever.write(nome)
+   else:
+    print(Fore.LIGHTRED_EX+"Erro!!!")
+  else:
+   print(Fore.LIGHTRED_EX+"Erro!!!")
+p1=gk("David",16)
+

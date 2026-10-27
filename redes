@@ -1,0 +1,44 @@
+from colorama import Fore
+class coach:
+ def __init__(self, nome_coach, idade_coach, especialidade_coach, fisico_coach):
+  self.nome_coach=input(Fore.LIGHTWHITE_EX+"Introduza o seu nome: ")
+  self.idade_coach = int(input(Fore.LIGHTWHITE_EX+"Introduza a sua idade: "))
+  veri_especiali_corre_coach=self.especialidade_coach=input(Fore.LIGHTWHITE_EX+"Introduza a sua especialidade: ").isdigit()
+  self.fisico_coach=input(Fore.LIGHTWHITE_EX+"Introduza a sua altura e físico: ")
+ def verificar_idade_coach(self,idade_coach):
+  if self.idade_coach<18 and self.idade_coach==1:
+   print(Fore.LIGHTRED_EX+"És menor de idade!!!")
+  elif self.idade_coach>=18 and self.idade_coach<=126:
+   print(Fore.LIGHTGREEN_EX+"Seja bem vindo sr treinador!!!")
+  else:
+   print(Fore.RED+"Erro!!!")
+ def agrupar_especialidade_coach(self,especialidade_coach,veri_especiali_corre_coach):
+  if veri_especiali_corre_coach==True:
+   print("Ok")
+  else:
+   print(Fore.RED + "Erro!!!")
+class guarda_redes:
+ def __init__(self,nome_redes,idade_redes,dificuldade_redes,fisico_redes):
+  self.nome_redes = input(Fore.LIGHTWHITE_EX+"Introduza o seu nome: ")
+  self.idade_redes = int(input(Fore.LIGHTWHITE_EX+"Introduza a sua idade: "))
+  veri_dif_corre_redes = self.dificuldade_redes = input(Fore.LIGHTWHITE_EX+"Introduza a sua especialidade: ").isdigit()
+  self.fisico_redes = input(Fore.LIGHTWHITE_EX+"Introduza a sua altura e físico: ")
+ def verificar_idade_redes(self, idade_redes):
+  if self.idade_redes < 18 and self.idade_redes == 1:
+   print(Fore.LIGHTRED_EX + "És menor de idade!!!")
+  elif self.idade_redes >= 18 and self.idade_redes <= 126:
+   print(Fore.LIGHTGREEN_EX+"Seja bem vindo grande redes!!!")
+  else:
+   print(Fore.RED+"Erro!!!")
+ def agrupar_especialidade_redes(self, dificuldade_redes, veri_dif_corre_redes):
+  if veri_dif_corre_redes == True:
+   print("Ok")
+  else:
+   print(Fore.RED + "Erro!!!")
+   print(Fore.LIGHTGREEN_EX + "Podes continuar!!!")
+class encontrar(coach, guarda_redes):
+ def encontrar_dinh(self):
+  if self.especialidade_coach==self.dificuldade_redes:
+   print(f"O {self.nome_coach} vai treinar o {self.nome_redes}.")
+  else:
+   print(Fore.LIGHTRED_EX+"Sem treinadores disponíveis.")

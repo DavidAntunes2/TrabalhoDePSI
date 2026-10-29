@@ -4,11 +4,13 @@ while True:
  nome = input(Fore.LIGHTWHITE_EX+"Introduza o seu nome: ")
  if nome.strip():
   print(Fore.LIGHTRED_EX + "ERRO!!!")
+  break
  else:
   print(Fore.LIGHTGREEN_EX + "A continuar...")
   time.sleep(1)
  if nome.isdigit==True:
   print(Fore.LIGHTRED_EX + "ERRO!!!")
+  break
  else:
   print(Fore.LIGHTGREEN_EX + "A continuar...")
   time.sleep(1)

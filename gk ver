@@ -1,15 +1,15 @@
 from colorama import Fore
 import time
 while True:
- nome = input("Introduza o seu nome: ")
- idade = input("Introduza a sua idade: ")
+ nome = input(Fore.LIGHTWHITE_EX+"Introduza o seu nome: ")
+ idade = int(input(Fore.LIGHTWHITE_EX+"Introduza a sua idade: "))
  if idade >= 1 and idade <= 126:
   print(Fore.LIGHTGREEN_EX + "A continuar...")
   time.sleep(1)
  else:
   print(Fore.LIGHTRED_EX + "ERRO!!!")
   break
- modalidade= input("Introduza a sua modalidade: ")
+ modalidade= input(Fore.LIGHTWHITE_EX+"Introduza a sua modalidade: ")
  explusao = input(Fore.LIGHTWHITE_EX + "Qual sua explusão vertical: ")
  altura = input(Fore.LIGHTWHITE_EX + "Qual sua altura: ")
  peso=input(Fore.LIGHTWHITE_EX + "Qual é o seu peso: ")

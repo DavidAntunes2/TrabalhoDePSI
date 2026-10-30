@@ -45,7 +45,7 @@ while True:
          ex_ch = altura / reflexos * ex_ver_mem
          return f"A sua explusão lateral alta: {alt_ver}, a sua explusão lateral meia altura: {ex_ver_mem} e a sua explosão vertical no chão: {ex_ch}."
  else:
-  print(Fore.LIGHTRED_EX + "ERRO este site foi só feito para gks!!!")
+  print(Fore.LIGHTRED_EX + "ERRO, este site foi só feito para gks!!!")
   break
 
 

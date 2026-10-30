@@ -2,7 +2,7 @@ from colorama import Fore
 import time
 while True:
  modalidade = input(Fore.LIGHTWHITE_EX + "Você é gk: ").lower()
- if modalidade == "s" or modalidade=="sim":
+ if modalidade == "s" and modalidade=="sim" or modalidade=="y":
   nome = input(Fore.LIGHTWHITE_EX+"Introduza o seu nome: ")
   if not nome.strip():
    print(Fore.LIGHTRED_EX + "ERRO!!!")
@@ -45,7 +45,9 @@ while True:
          ex_ch = altura / reflexos * ex_ver_mem
          return f"A sua explusão lateral alta: {alt_ver}, a sua explusão lateral meia altura: {ex_ver_mem} e a sua explosão vertical no chão: {ex_ch}."
  else:
-  print(Fore.LIGHTRED_EX + "ERRO, este site foi só feito para gks!!!")
+  erro=Fore.RED+"ERRO,"
+  frase_resto=Fore.LIGHTRED_EX+"este site foi só feito para gks!!!"
+  print(erro,frase_resto)
   break
 
 

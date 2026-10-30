@@ -48,7 +48,6 @@ while True:
        def calcular_idade(self,idade):
         idade_calculada=2026-idade
         return idade_calculada
-
      else:
       print(Fore.LIGHTRED_EX + "ERRO!!!")
  else:

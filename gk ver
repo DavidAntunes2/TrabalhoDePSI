@@ -19,7 +19,7 @@ while True:
     with open("Nome_gk.txt","w",encoding="utf-8") as r:
      r.write(nome)
      idade = int(input(Fore.LIGHTWHITE_EX+"Introduza o seu ano de nascimento: "))
-     if idade >= 1900 and idade <= 2026:
+     if idade >= 1900 and idade <= 2025:
       print(Fore.LIGHTGREEN_EX + "A continuar...")
       time.sleep(1)
       with open("Idade_gk.txt","w",encoding="utf-8") as r2:
@@ -48,7 +48,7 @@ while True:
        def calcular_idade(self,idade):
         idade_calculada=2026-idade
         return idade_calculada
-       
+
      else:
       print(Fore.LIGHTRED_EX + "ERRO!!!")
  else:

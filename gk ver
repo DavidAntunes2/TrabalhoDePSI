@@ -24,7 +24,7 @@ while True:
       time.sleep(1)
       with open("Idade_gk.txt","w",encoding="utf-8") as r2:
        r.write(idade)
-      explusao = input(Fore.LIGHTWHITE_EX + "Introduza a sua explusao: ")
+      explusao = input(Fore.LIGHTWHITE_EX + "Introduza a sua explusão: ")
       altura = input(Fore.LIGHTWHITE_EX + "Introduza a sua altura: ")
       peso = input(Fore.LIGHTWHITE_EX + "Introduza o seu peso: ")
       reflexos= input(Fore.LIGHTWHITE_EX + "Introduza o seu tempo de reação: ")

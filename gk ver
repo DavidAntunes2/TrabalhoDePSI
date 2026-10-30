@@ -24,12 +24,14 @@ while True:
       time.sleep(1)
       with open("Idade_gk.txt","w",encoding="utf-8") as r2:
        r.write(idade)
-      explusao = input(Fore.LIGHTWHITE_EX + "Introduza a sua explusão: ")
+      explusao = input(Fore.LIGHTWHITE_EX + "Introduza a sua explusão vertical: ")
       altura = input(Fore.LIGHTWHITE_EX + "Introduza a sua altura: ")
-      peso = input(Fore.LIGHTWHITE_EX + "Introduza o seu peso: ")
-      reflexos= input(Fore.LIGHTWHITE_EX + "Introduza o seu tempo de reação: ")
+      peso = int(input(Fore.LIGHTWHITE_EX + "Introduza o seu peso: "))
+      reflexos= int(input(Fore.LIGHTWHITE_EX + "Introduza o seu tempo de reação: "))
+      forca=int(input(Fore.LIGHTWHITE_EX + "Introduza a sua força preensão: "))
+      espalmar=int(input(Fore.LIGHTWHITE_EX + "Introduza a sua força de expelir: "))
       class Pessoa:
-       def __init__(self, nome, idade, modalidade, explusao, altura, peso, reflexos):
+       def __init__(self, nome, idade, modalidade, explusao, altura, peso, reflexos,forca,espalmar):
         self.nome = nome
         self.idade = idade
         self.modalidade = modalidade
@@ -37,13 +39,17 @@ while True:
         self.altura = altura
         self.peso = peso
         self.reflexos = reflexos
+        self.forca=forca
+        self.espalmar=espalmar
+       def __str__(self, nome, idade, modalidade, explusao, altura, peso, reflexos,forca,espalmar):
+        return print(f"O seu nome é {self.nome}, você têm {self.idade}, você é {modalidade}, sua explusão é {explusao}, a sua altura é {altura}, você pesa {peso}kg, os seus reflexos são {reflexos}s, a sua força preensão é {forca} e a sua força de expelir é {espalmar}kg.")
        def def_alcance(self, nome, idade, modalidade, explusao, altura, peso, reflexos):
         fin = explusao + altura
-        return f"A sua explusão: {explusao * altura / peso}."
+        return f"O seu alcance vertical: {explusao + altura}."
        def explusao_vertical(self, nome, idade, modalidade, explusao, altura, peso, reflexos, fin):
          alt_ver = fin / 2
          ex_ver_mem = alt_ver / 2
-         ex_ch = altura / reflexos * ex_ver_mem
+         ex_ch = ex_ver_mem/altura
          return f"A sua explusão lateral alta: {alt_ver}, a sua explusão lateral meia altura: {ex_ver_mem} e a sua explosão vertical no chão: {ex_ch}."
        def calcular_idade(self,idade):
         idade_calculada=2026-idade

@@ -23,7 +23,7 @@ while True:
     altura = input(Fore.LIGHTWHITE_EX + "Introduza a sua altura: ")
     peso = input(Fore.LIGHTWHITE_EX + "Introduza o seu peso: ")
     reflexos= input(Fore.LIGHTWHITE_EX + "Introduza o seu tempo de reação: ")
-    class Personagem:
+    class Pessoa:
      def __init__(self, nome, idade, modalidade, explusao, altura, peso, reflexos):
       self.nome = nome
       self.idade = idade

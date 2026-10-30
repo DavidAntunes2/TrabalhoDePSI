@@ -16,7 +16,8 @@ while True:
    else:
     print(Fore.LIGHTGREEN_EX + "A continuar...")
     time.sleep(1)
-    with open("Nome.txt")
+    with open("Nome_gk.txt","w",encoding="utf-08") as r:
+     r.write(nome)
      idade = int(input(Fore.LIGHTWHITE_EX+"Introduza a sua idade: "))
      if idade >= 1 and idade <= 126:
       print(Fore.LIGHTGREEN_EX + "A continuar...")

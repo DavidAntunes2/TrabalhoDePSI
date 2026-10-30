@@ -2,7 +2,7 @@ from colorama import Fore
 import time
 while True:
  modalidade = input(Fore.LIGHTWHITE_EX + "Você é gk: ").lower()
- if modalidade == "s" and modalidade=="sim" or modalidade=="y":
+ if modalidade == "s" or modalidade=="sim" or modalidade=="y":
   nome = input(Fore.LIGHTWHITE_EX+"Introduza o seu nome: ")
   if not nome.strip():
    print(Fore.LIGHTRED_EX + "ERRO!!!")

@@ -1,3 +1,4 @@
+"""
 from colorama import Fore
 import time
 altura=int(input(Fore.LIGHTWHITE_EX+"Introduza a altura do retângulo: "))
@@ -106,7 +107,7 @@ elif letra52 == 13:
  def gerador_senhas(letra62,letra6,letra5,letra4,letra3,letra2,letra1):
   return f"Está ai a sua senha {letra1,letra2,letra3,letra4,letra5,letra6,letra62}"
  print(gerador_senhas(letra62,letra6,letra5,letra4,letra3,letra2,letra1))
-
+"""
 a=int(input("Inroduza o pagamento: "))
 def calcular_pagamento(a):
  if a<40:

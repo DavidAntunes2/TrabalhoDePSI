@@ -109,14 +109,27 @@ elif letra52 == 13:
 
 a=int(input("Inroduza o pagamento: "))
 def calcular_pagamento(a):
- nota=5
- produto = 40
- deve_dar= produto-a
- if deve_dar<0:
-  vezes_cabe5=a/5
+ if a<40:
+  resultado_devimento=40-a
+  q_cabe5= resultado_devimento/5
+  if q_cabe5==float:
+   resto1 = q_cabe5 % 2
+   return f" Você recebe {q_cabe5} notas de 5 e {resto1}€."
+  else:
+   return f" Você recebe {q_cabe5} notas de 5."
+ elif a==40:
+  return f"Não deves nada."
+ elif a>=45:
+  deve_dar= a-40
+  vezes_cabe5=deve_dar/5
   if vezes_cabe5==float:
-   vezes_cabe5
-   return f" Você recebe {vezes_cabe5} notas de 5"
+   resto=vezes_cabe5%2
+   return f" Você recebe {vezes_cabe5} notas de 5 e {resto}€."
+  else:
+   return f" Você recebe {vezes_cabe5} notas de 5."
+ else:
+  print("ERRO!!!")
+print(calcular_pagamento(a))
 
 
 

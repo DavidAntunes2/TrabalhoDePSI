@@ -1,0 +1,113 @@
+from colorama import Fore
+import time
+altura=int(input(Fore.LIGHTWHITE_EX+"Introduza a altura do retângulo: "))
+base = int(input(Fore.LIGHTWHITE_EX+"Introduza a base do retângulo: "))
+print(Fore.LIGHTGREEN_EX+"A calcular...")
+time.sleep(1)
+def calcular_area_retangulo(base,altura):
+ return f"A área é {base*altura}."
+print(calcular_area_retangulo(base,altura))
+
+from colorama import Fore
+import time
+euros=float(input(Fore.LIGHTWHITE_EX+"Introduza o seu dinheiro em €: "))
+taxadecambio = 0.5
+print(Fore.LIGHTGREEN_EX+"A calcular...")
+time.sleep(1)
+def calcular_dolares(euros,taxadecambio):
+ return f"O valor em dolares é {euros/taxadecambio}."
+print(calcular_dolares(euros,taxadecambio))
+
+from colorama import Fore
+import time
+ano_nascimento=int(input(Fore.LIGHTWHITE_EX+"Introduza o seu ano de nascimento: "))
+print(Fore.LIGHTGREEN_EX+"A calcular...")
+time.sleep(1)
+def calcular_idade(ano_nascimento):
+ idade=2026-ano_nascimento
+ return f"A sua idade é {idade} anos."
+print(calcular_idade(ano_nascimento))
+
+from colorama import Fore
+import time
+km=float(input(Fore.LIGHTWHITE_EX+"Introduza os kilómetros que tem de percorrer: "))
+litros=float(input(Fore.LIGHTWHITE_EX+"Introduza o em litros o gasóleo que vai gastar: "))
+print(Fore.LIGHTGREEN_EX+"A calcular...")
+time.sleep(1)
+def calcular_consumo_gasoleo(km,litros):
+ return f"Você vai consumir {km/litros} litros/km."
+print(calcular_consumo_gasoleo(km,litros))
+
+import random
+letra1 = random.randint(1, 99)
+letra2 = random.randint(1, 99)
+letra3 = random.randint(1, 99)
+letra4 = random.randint(1, 99)
+letraverdadeira = ["A", "a", "b", "C", "c", "D", "d", "E", "e", "F", "f", "G", "g"]
+letra5 = random.randint(1, 13)
+if letra5 == 0:
+ letra6 = letraverdadeira[0]
+elif letra5 == 1:
+ letra6 = letraverdadeira[1]
+elif letra5 == 2:
+ letra6 = letraverdadeira[2]
+elif letra5 == 3:
+ letra6 = letraverdadeira[3]
+elif letra5 == 4:
+ letra6 = letraverdadeira[4]
+elif letra5 == 5:
+ letra6 = letraverdadeira[5]
+elif letra5 == 6:
+ letra6 = letraverdadeira[6]
+elif letra5 == 7:
+ letra6 = letraverdadeira[7]
+elif letra5 == 8:
+ letra6 = letraverdadeira[8]
+elif letra5 == 9:
+ letra6 = letraverdadeira[9]
+elif letra5 == 10:
+ letra6 = letraverdadeira[10]
+elif letra5 == 11:
+ letra6 = letraverdadeira[11]
+elif letra5 == 12:
+ letra6 = letraverdadeira[12]
+elif letra5 == 13:
+ letra6 = letraverdadeira[13]
+letraverdadeira2 = ["A", "a", "b", "C", "c", "D", "d", "E", "e", "F", "f", "G", "g"]
+letra52 = random.randint(1, 13)
+if letra52 == 0:
+ letra62 = letraverdadeira[0]
+elif letra52 == 1:
+ letra62 = letraverdadeira[1]
+elif letra52 == 2:
+ letra62 = letraverdadeira[2]
+elif letra52 == 3:
+ letra62 = letraverdadeira[3]
+elif letra52 == 4:
+ letra62 = letraverdadeira[4]
+elif letra52 == 5:
+ letra62 = letraverdadeira[5]
+elif letra52 == 6:
+ letra62 = letraverdadeira[6]
+elif letra52 == 7:
+ letra62 = letraverdadeira[7]
+elif letra52 == 8:
+ letra62 = letraverdadeira[8]
+elif letra52 == 9:
+ letra62 = letraverdadeira[9]
+elif letra52 == 10:
+ letra62 = letraverdadeira[10]
+elif letra52 == 11:
+ letra62 = letraverdadeira[11]
+elif letra52 == 12:
+ letra62 = letraverdadeira[12]
+elif letra52 == 13:
+ letra62 = letraverdadeira[13]
+ def gerador_senhas(letra62,letra6,letra5,letra4,letra3,letra2,letra1):
+  return f"Está ai a sua senha {letra1,letra2,letra3,letra4,letra5,letra6,letra62}"
+ print(gerador_senhas(letra62,letra6,letra5,letra4,letra3,letra2,letra1))
+
+
+
+
+
